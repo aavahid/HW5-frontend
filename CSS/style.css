@@ -1,23 +1,24 @@
 @font-face {
   font-family: "Graphik";
-  src: url("./fonts/GraphikRegular.otf") format("opentype");
+  src: url("../fonts/GraphikRegular.otf") format("opentype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Graphik";
-  src: url("./fonts/GraphikLight.otf") format("opentype");
+  src: url("../fonts/GraphikLight.otf") format("opentype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Graphik";
-  src: url("./fonts/GraphikMedium.otf") format("opentype");
+  src: url("../fonts/GraphikMedium.otf") format("opentype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Graphik";
-  src: url("./fonts/GraphikSemibold.otf") format("opentype");
+  src: url("../fonts/GraphikSemibold.otf") format("opentype");
   font-weight: 600;
 }
+
 :root {
   --bg-color: #181818;
   --light-text: #fff;
@@ -122,8 +123,8 @@ body {
   letter-spacing: 0.2px;
 }
 .btn--secondary:hover {
-  background-color: transparent;
-  border: 1px solid var(--light-text);
+  background-color: rgb(241, 100, 123);
+  border: 1px solid red;
   transform: scale(1.1);
 }
 
@@ -197,6 +198,7 @@ body {
 .section__cards .section__right__card {
   display: flex;
   width: 476px;
+  height: 626.52px;
   padding: 40px 0px;
   flex-direction: column;
   align-items: center;
@@ -244,4 +246,131 @@ body {
   width: 379px;
   height: 276px;
   border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+  }
+  .section .section__box {
+    width: 389px;
+    height: 1420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section .section__box .section__content {
+    width: 308px;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__textcontent {
+    width: 308px;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__textcontent-headline {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section__textcontent p {
+    color: var(--light-text);
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px; /* 119.231% */
+    letter-spacing: 0.2px;
+  }
+  .section__textcontent-subheading {
+    width: 288px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+  .section__textcontent-subheading p {
+    color: var(--light-text);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.2px;
+  }
+  .section__cards {
+    display: flex;
+    width: 389px;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }
+  .section__cards .section__left__card {
+    display: flex;
+    width: 348px;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    background: var(--light-text);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+  }
+  .section__cards .section__left__card .section__cards__bottom {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  .section__cards .section__left__card .section__cards__bottom img {
+    width: 297.031px;
+    height: 174.955px;
+  }
+  .section__cards {
+    display: flex;
+    width: 389px;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }
+  .section__cards .section__right__card {
+    display: flex;
+    width: 348px;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    background: var(--light-text);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+  }
+  .section__cards .section__right__card .section__cards__bottom {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  .section__cards .section__right__card .section__cards__bottom img {
+    width: 297.031px;
+    height: 174.955px;
+    width: 280px;
+    height: 204px;
+    border-radius: 14px;
+  }
 }
